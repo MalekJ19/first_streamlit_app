@@ -46,7 +46,7 @@ except URLError as e :
 #streamlit.write('The user entered ', add_my_fruit)
 
 
-streamlit.stop()
+#streamlit.stop()
 
 streamlit.header("the fruit load list contains :")
 def get_fruit_load_list():
