@@ -26,7 +26,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.header("Fruityvice Fruit Advice!")
 try:
    fruit_choice = streamlit.text_input('What fruit would you like information about?')
-  ifnot fruit_choice :
+  if not fruit_choice :
     streamlit.error("Please select the fruit")
     else :
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
@@ -37,8 +37,8 @@ except URLError as e :
 streamlit.error()
 
 
-add_my_fruit=streamlit.text_input('What fruit would you like to add ?','Jackfruit')
-streamlit.write('The user entered ', add_my_fruit)
+#add_my_fruit=streamlit.text_input('What fruit would you like to add ?','Jackfruit')
+#streamlit.write('The user entered ', add_my_fruit)
 
 
 streamlit.stop()
