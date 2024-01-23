@@ -26,7 +26,6 @@ streamlit.write('The user entered ', fruit_choice)
 add_my_fruit=streamlit.text_input('What fruit would you like to add ?','Jackfruit')
 streamlit.write('The user entered ', add_my_fruit)
 
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
@@ -45,4 +44,6 @@ my_cur.execute("SELECT * from FRUIT_LOAD_LIST")
 my_data_row = my_cur.fetchone()
 streamlit.text("the fruit load list contains :")
 streamlit.text(my_data_row)
+
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
