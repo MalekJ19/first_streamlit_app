@@ -34,7 +34,7 @@ try:
          streamlit.dataframe(fruityvice_normalized)
 
 except URLError as e :
-streamlit.error()
+                     streamlit.error()
 
 
 #add_my_fruit=streamlit.text_input('What fruit would you like to add ?','Jackfruit')
