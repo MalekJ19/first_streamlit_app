@@ -55,7 +55,7 @@ if streamlit.button('Add a Fruit to the List'):
 
 
 
-#streamlit.stop()
+streamlit.stop()
 
 streamlit.header("the fruit load list contains :")
 def get_fruit_load_list():
